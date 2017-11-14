@@ -1,0 +1,13 @@
+#!/bin/bash
+
+NEW_VERSION=$1
+
+die() { echo "$@" 1>&2 ; exit 1; }
+
+[ ${NEW_VERSION} ] || die "Script changes maven version in poms starting with current directory. Please provide new version number as first parameter."
+
+echo Setting versions in poms to ${NEW_VERSION}
+
+mvn versions:set -DnewVersion=${NEW_VERSION} -DgenerateBackupPoms=false
+
+echo Done

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+show_help() {
+cat << EOF
+Script allows to modify database basing on maven liquibase plugin
+It is expected to have pom.xml in current directory and there should be liquibase plugin configuration within pom.xml.
+usage: liq <opt>
+Options:
+    * dr - drop database
+    * up - update database
+    * re - recreate database (drop all and update)
+    * us - generate update SQL file
+EOF
+}
+
+case $1 in
+    dr) mvn liquibase:dropAll;;
+    up) mvn process-resources liquibase:update;;
+    re) mvn process-resources liquibase:dropAll liquibase::update;;
+    us) mvn process-resources liquibase:updateSQL;;
+    *) show_help;;
+esac
