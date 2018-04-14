@@ -7,8 +7,8 @@ alias cd..='cd ..'
 
 ## a quick way to get out of current directory ##
 alias ..='cd ..'
-alias ...='cd ../../../'
-alias ....='cd ../../../../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
@@ -19,10 +19,11 @@ alias du=ncdu
 alias df=pydf
 alias diff='colordiff'
 
-# dockep aliases
-alias dc=docker
-alias dco=docker-compose
+# docker aliases
+alias d=docker
+alias dc=docker-compose
 alias dm=docker-machine
+alias vg=vagrant
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
@@ -59,3 +60,17 @@ alias shutdown='sudo /sbin/shutdown'
 alias mc='mvn clean'
 alias mci='mvn clean install'
 alias mdeptree='mvn dependency:tree > deptree.txt'
+
+# AWS
+alias s3='aws s3'
+alias sss='aws s3'
+alias ec2='aws ec2'
+alias ecc='aws ec2'
+
+alias op=xdg-open
+
+alias g=git
+alias gr='gradle'
+alias grc='gradle clean'
+alias grb='gradle build'
+alias grcb='gradle clean build'
