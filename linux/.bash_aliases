@@ -74,3 +74,6 @@ alias gr='gradle'
 alias grc='gradle clean'
 alias grb='gradle build'
 alias grcb='gradle clean build'
+
+alias pd='pushd .'
+alias pod=popd
