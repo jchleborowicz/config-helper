@@ -73,6 +73,7 @@ alias g=git
 alias gr='gradle'
 alias grc='gradle clean'
 alias grb='gradle build'
+alias grt='gradle tasks'
 alias grcb='gradle clean build'
 
 alias pd='pushd .'
