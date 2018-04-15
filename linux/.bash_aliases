@@ -77,11 +77,11 @@ alias grb='gradle build'
 alias grt='gradle tasks'
 alias grcb='gradle clean build'
 
-alias gwr='./gradlew'
-alias gwrc='./gradlew clean'
-alias gwrb='./gradlew build'
-alias gwrt='./gradlew tasks'
-alias gwrcb='./gradlew clean build'
+alias gw='./gradlew'
+alias gwc='./gradlew clean'
+alias gwb='./gradlew build'
+alias gwt='./gradlew tasks'
+alias gwcb='./gradlew clean build'
 
 alias pd='pushd .'
 alias pod=popd
